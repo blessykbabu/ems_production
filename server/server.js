@@ -7,7 +7,7 @@ const cors=require('cors');
 dotenv.config();
 
 const app = express();
-app.use(cors({orgin:'http://localhost:5000'}))
+// app.use(cors({orgin:'http://localhost:5000'}))
 app.use('/uploads',express.static(__dirname+"/uploads"));
 app.use('/',express.static(__dirname + '/public'));
 app.use(express.json());
